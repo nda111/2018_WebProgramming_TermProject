@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title>Desarrollo</title>
+
+    <link rel="stylesheet" href="Style/Cats/General.css" type="text/css" />
+    <link rel="stylesheet" href="Style/Cats/Roni.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1>Roni</h1>
+        <hr />
+    </header>
+
+    <article>
+        <table>
+            <tr>
+                <td>
+                    <img id="profile" src="Resources/cats/Roni/Profile.jpg" />
+                </td>
+                <td>
+                    <div id="profile-container">
+                        <ul>
+                            <li>이름: <b>로니</b></li>
+                            <li>별명: <b>롸니, 론, 로니왕쟌님</b></li>
+                            <li>나이: <b>2살</b></li>
+                            <li>품종: <b>코리안 숏헤어</b></li>
+                            <li>무늬: <b>노란 태비</b></li>
+                            <li>성격: 소심소심...</li>
+                            <li>좋아하는 장난감: <b>데빌 스네이크</b></li>
+                            <li>매력 포인트<em class="red">♡</em>: <b><em class="yellow">☆금색☆</em> 눈</b></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="Resources/cats/Roni/00.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="Resources/cats/Roni/01.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="Resources/cats/Roni/03.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="Resources/cats/Roni/04.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="Resources/cats/Roni/06.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="Resources/cats/Roni/07.jpg" style="width:50%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="Resources/cats/Roni/08.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="Resources/cats/Roni/09.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="Resources/cats/Roni/10.jpg" style="width:50%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="Resources/cats/Roni/11.jpg" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                          var i;
+                          var slides = document.getElementsByClassName("mySlides");
+                          var dots = document.getElementsByClassName("dot");
+                          if (n > slides.length) {slideIndex = 1}
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                              slides[i].style.display = "none";
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                              dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";
+                          dots[slideIndex-1].className += " active";
+                        }
+                    </script>
+                </td>
+            </tr>
+        </table>
+    </article>
+</body>
+</html>

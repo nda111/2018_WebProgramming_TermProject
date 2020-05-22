@@ -1,0 +1,12 @@
+﻿h1 {
+    color: black;
+}
+hr {
+    background-color: black;
+}
+#profile {
+    border: 10px inset gray;
+}
+ul {
+    list-style: radial-gradient(white, black, white);
+}

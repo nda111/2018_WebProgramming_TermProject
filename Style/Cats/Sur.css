@@ -1,0 +1,12 @@
+﻿h1 {
+    color: #7F4E20;
+}
+hr {
+    background-color: #7F4E20;
+}
+#profile {
+    border: 10px inset #7F4E20;
+}
+ul {
+    list-style: radial-gradient(white, #7F4E20, white);
+}

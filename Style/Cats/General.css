@@ -1,0 +1,181 @@
+﻿body 
+{
+    width: 60%;
+    margin-left: 20%;
+
+    padding-top: 3%;
+}
+
+article
+{
+    padding: 2em;
+}
+
+h1
+{
+    margin-left: 3%;
+}
+hr
+{
+    background-color: black;
+    height: 5px;
+    border: none;
+}
+
+td
+{
+    vertical-align: top;
+}
+td:first-child
+{
+    width: 30%;
+}
+td:nth-child(2)
+{
+    padding-left: 1%;
+}
+tr:last-child td:last-child
+{
+    padding-top: 30px;
+}
+
+#profile
+{
+    border: 10px gray inset;
+    width: 90%;
+
+    animation: show-profile 1s;
+}
+@keyframes show-profile
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+#profile-container
+{
+    width: 98%;
+    overflow: hidden;
+
+    animation: show-texts 1.5s;
+}
+@keyframes show-texts
+{
+    from
+    {
+        width: 0;
+    }
+    to
+    {
+        width: 98%;
+    }
+}
+
+li
+{
+    margin-bottom: 11px;
+}
+
+em
+{
+    font-style: normal;
+    font-weight: bold;
+}
+.red
+{
+    color: red;
+}
+.yellow
+{
+    color: #8eb700;
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}

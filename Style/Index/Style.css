@@ -1,0 +1,310 @@
+﻿body {
+    font-family: Arial;
+    height: 5000px;
+}
+
+header
+{
+    text-align:center;
+}
+
+.nav-elem h1 {
+    font-size: 400%;
+    position: fixed;
+    top: 27%;
+    color: #00008A;
+}
+#blog-nav #blog-tag
+{
+    top: 0;
+}
+
+.nav-elem hr
+{
+    position: fixed;
+    top: 40%;
+
+    height: 5px;
+
+    background-color: #00008A;
+    border: none;
+}
+
+.item
+{
+    position: fixed;
+
+    width: 180px;
+    height: 180px;
+
+    line-height: 180px;
+
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 250%;
+
+    border-radius: 50%;
+}
+#cats-nav .item
+{
+    width: 300px;
+    height: 300px;
+
+    transition: all 0.5s;
+}
+    #cats-nav .item:hover {
+        box-shadow: inset 0 0 5px 5px white;
+    }
+
+#blog-item 
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 35%;
+    height: 100px;
+
+    border-radius: 50px;
+
+    text-align: center;
+    line-height: 100px;
+    font-size: 150%;
+    color: #6bff77;
+    font-weight: bold;
+
+    margin-left: 32.5%;
+    margin-top: 27%;
+
+    transition: all 0.5s;
+}
+#blog-item:hover {
+    box-shadow: 0 0 100px 0 #6bff77;
+}
+
+#profile-i1 {
+    left: 20%;
+    top: 47%;
+    background-color: rgb(255, 174, 95);
+    transition: all 0.3s;
+}
+    #profile-i1:hover {
+        box-shadow: 0 0 10px 10px rgb(255, 174, 95), inset 0 0 10px 10px white;
+    }
+#profile-i2 {
+    left: 37%;
+    top: 57%;
+    background-color: rgb(116, 255, 204);
+    transition: all 0.3s;
+}
+    #profile-i2:hover {
+        box-shadow: 0 0 10px 10px rgb(116, 255, 204), inset 0 0 10px 10px white;
+    }
+#profile-i3 {
+    left: 30%;
+    top: 77%;
+    background-color: cornflowerblue;
+    transition: all 0.3s;
+}
+    #profile-i3:hover {
+        box-shadow: 0 0 10px 10px cornflowerblue, inset 0 0 10px 10px white;
+    }
+
+#project-i1 {
+    left: 50%;
+    top: 57%;
+    background-color: rgb(157, 157, 157);
+    transition: all 0.3s;
+}
+    #project-i1:hover {
+        box-shadow: 0 0 10px 10px rgb(157, 157, 157), inset 0 0 10px 10px white;
+    }
+#project-i2 {
+    left: 63%;
+    top: 47%;
+    background-color: rgb(255, 86, 86);
+    transition: all 0.3s;
+}
+    #project-i2:hover {
+        box-shadow: 0 0 10px 10px rgb(255, 86, 86), inset 0 0 10px 10px white;
+    }
+#project-i3 {
+    left: 63%;
+    top: 77%;
+    background-color: rgb(185, 116, 255);
+    transition: all 0.3s;
+}
+    #project-i3:hover {
+        box-shadow: 0 0 10px 10px rgb(185, 116, 255), inset 0 0 10px 10px white;
+    }
+
+#cats-i1 {
+    left: 10%;
+    top: 50%;
+    background-color: #C89F62;
+}
+#cats-i2 {
+    left: 30%;
+    top: 50%;
+    background-color: #7F4E20;
+}
+#cats-i3 {
+    left: 50%;
+    top: 50%;
+    background-color: #000000;
+}
+#cats-i4 {
+    left: 70%;
+    top: 50%;
+    background-color: #EDAE05;
+}   
+
+#top 
+{
+    text-align: center;
+
+    width: 100%;
+}
+a
+{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#top #to-logo
+{
+    width: 6em;
+    height: 2em;
+
+    line-height: 1em;
+    font-size: 150%;
+    padding: 1em;
+
+    margin-top: 1em;
+    margin-left: 45%;
+
+    transition: all 0.5s;
+
+    font-family: TmonMonsori;
+}
+#top #to-logo:hover 
+{
+    box-shadow: 
+        1em 0 1em 0 #CCCCCC,
+        -1em 0 1em 0 #CCCCCC;
+}
+
+#logo 
+{
+    position:fixed;
+    left:0;
+
+    width: 100%;
+}
+
+#to-menu {
+    width: 6em;
+    height: 2em;
+    line-height: 1em;
+    font-size: 150%;
+    padding: 1em;
+    margin-left: 45%;
+    transition: all 0.5s;
+
+    font-family: TmonMonsori;
+}
+#to-menu:hover 
+{
+    box-shadow: 1em 0 1em 0 #CCCCCC, -1em 0 1em 0 #CCCCCC;
+}
+
+.menu
+{
+    position:fixed;
+    left: 0;
+    top: 250px;
+
+    width: 20%;
+
+    border-radius: 25%;
+}
+
+#to-project 
+{
+    width: 6em;
+    height: 2em;
+    line-height: 1em;
+    font-size: 150%;
+    padding: 1em;
+    margin-left: 65%;
+    transition: all 0.5s;
+    font-family: TmonMonsori;
+}
+
+#to-project:hover 
+{
+    box-shadow: 1em 0 1em 0 #CCCCCC, -1em 0 1em 0 #CCCCCC;
+}
+
+#to-cats {
+    width: 6em;
+    height: 2em;
+    line-height: 2em;
+    font-size: 150%;
+    padding: 1em;
+    margin-left: 25%;
+    transition: all 0.5s;
+    font-family: TmonMonsori;
+}
+
+#to-cats:hover {
+    box-shadow: 1em 0 1em 0 #CCCCCC, -1em 0 1em 0 #CCCCCC;
+}
+
+#to-blog {
+    width: 6em;
+    height: 2em;
+    line-height: 2em;
+    font-size: 150%;
+    padding: 1em;
+    margin-left: 63%;
+    transition: all 0.5s;
+    font-family: TmonMonsori;
+}
+
+#to-blog:hover {
+    box-shadow: 1em 0 1em 0 #CCCCCC, -1em 0 1em 0 #CCCCCC;
+}
+
+#to-top {
+    width: 40%;
+    height: 1em;
+    line-height: 1em;
+    font-size: 150%;
+    margin-left: 30%;
+    padding: 1em;
+    transition: all 0.5s;
+    text-align:center;
+    font-family: TmonMonsori;
+}
+#to-top:hover {
+    box-shadow: 1em 0 1em 0 #CCCCCC, -1em 0 1em 0 #CCCCCC;
+}
+
+section
+{
+    animation: fadein 1s;
+}
+@keyframes fadein
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}

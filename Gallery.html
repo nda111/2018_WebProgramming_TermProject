@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title>Desarrollo</title>
+
+    <link rel="stylesheet" href="Style/Gallery/Style.css" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Script/SmoothScroll.js"></script>
+    <script src="Script/ScollRate.js"></script>
+    <script>
+
+    </script>
+</head>
+
+<!--
+<body>
+    <aside>
+        <div id="back" onclick="history.back();">
+            return;
+        </div>
+
+        <p id='conf' style='position: fixed; right: -1%; font-family: Arial; font-weight: bold; color: cornflowerblue; transform: rotate(90deg); '></p>
+        <script>
+            var conf = document.getElementById("conf");
+
+            conf.innerHTML = "0.000%";
+            conf.style.top = "1%";
+
+            window.addEventListener("scroll", function () {
+                var scrl = getScroll();
+
+                conf.innerHTML = (scrl * 100).toFixed(3) + "%";
+                conf.style.top = (1 + scrl * 85) + "%";
+            });
+        </script>
+    </aside>
+
+    <article>
+        <div id="wrap">
+            <header>
+                <h1>Gallery</h1>
+                <hr />
+            </header>
+
+            <section>
+                <script>
+                    var bigImage = document.getElementById("big");
+                </script>
+
+                <div id="big-image">
+                    <img id="big"/>
+                </div>
+
+                <div id="image-list-container">
+                    <ul id="image-list">
+                        <li onclick="bigImage.src = 'Resources/gallery/01.jpg';">
+                            <img src="Resources/gallery/01.jpg" />
+                        </li>
+                        <li>
+                            <img src="Resources/gallery/03.jpg" />
+                        </li>
+                        <li>
+                            <img src="Resources/gallery/04.jpg" />
+                        </li>
+                        <li>
+                            <img src="Resources/gallery/05.jpg" />
+                        </li>
+                        <li>
+                            <img src="Resources/gallery/06.jpg" />
+                        </li>
+                        <li>
+                            <img src="Resources/gallery/07.jpg" />
+                        </li>
+                        <li>
+                            <img src="Resources/gallery/08.jpg" />
+                        </li>
+                        <li>
+                            <img src="Resources/gallery/10.png" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </article>
+</body-->
+
+<body>
+    <article>
+        <div id="wrap">
+            <header>
+                <h1>History</h1>
+                <hr />
+            </header>
+
+            <section>
+                <table>
+                    <tr>
+                        <td style="vertical-align: top; ">
+                            <div id="list-container">
+                                <ul>
+                                    <li>
+                                        <span class="item" id="i1">
+                                            Image1
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="item" id="i2">
+                                            Image2
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="item" id="i3">
+                                            Image3
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="item" id="i4">
+                                            Image4
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="item" id="i5">
+                                            Image5
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="item" id="i6">
+                                            Image6
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="item" id="i7">
+                                            Image7
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="item" id="i8">
+                                            Image8
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+
+                        <td style="vertical-align: top; padding: 1em; padding-left: 3em;">
+                            <div id="content-container">
+                                <img id="big-image" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <script>
+
+                    var big = document.getElementById("big-image");
+                    var index;
+
+                    var items = [
+                        document.getElementById("i1"),
+                        document.getElementById("i2"),
+                        document.getElementById("i3"),
+                        document.getElementById("i4"),
+                        document.getElementById("i5"),
+                        document.getElementById("i6"),
+                        document.getElementById("i7"),
+                        document.getElementById("i8")
+                    ]
+
+                    items[0].onclick = function () {
+                        big.src = "Resources/gallery/01.jpg";
+                        index = 0;
+                    }
+                    items[1].onclick = function () {
+                        big.src = "Resources/gallery/10.png";
+                        index = 1;
+                    }
+                    items[2].onclick = function () {
+                        big.src = "Resources/gallery/03.jpg";
+                        index = 2;
+                    }
+                    items[3].onclick = function () {
+                        big.src = "Resources/gallery/04.jpg";
+                        index = 3;
+                    }
+                    items[4].onclick = function () {
+                        big.src = "Resources/gallery/05.jpg";
+                        index = 4;
+                    }
+                    items[5].onclick = function () {
+                        big.src = "Resources/gallery/06.jpg";
+                        index = 5;
+                    }
+                    items[6].onclick = function () {
+                        big.src = "Resources/gallery/07.jpg";
+                        index = 6;
+                    }
+                    items[7].onclick = function () {
+                        big.src = "Resources/gallery/08.jpg";
+                        index = 7;
+                    }
+
+                    document.getElementById("i1").onclick();
+
+                    window.setInterval(function () {
+                        index = (index + 1) % 8;
+                        items[index].click();
+                    }, 4000);
+
+                </script>
+            </section>
+        </div>
+
+        <div id="back" onclick="history.back();">
+            return;
+        </div>
+    </article>
+</body>
+</html>
